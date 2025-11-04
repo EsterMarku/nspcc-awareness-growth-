@@ -34,7 +34,6 @@ To identify how the NSPCC can measure *spontaneous awareness growth* and define 
 - Five ethical brand strategies  
 - Six multidimensional KPIs  
 - Framework enables NSPCC to target a 4-point awareness increase by 2027  
-- Full report: [`report/NSPCC_Report.pdf`](report/NSPCC_Report.pdf)
 
 ---
 
