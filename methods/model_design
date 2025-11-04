@@ -1,0 +1,76 @@
+# Methodology and Model Design
+
+## Framework: CRISP-DM
+This project followed the **CRISP-DM** (Cross-Industry Standard Process for Data Mining) framework, ensuring a structured and repeatable approach to research and analytics.
+
+1. **Business Understanding**  
+   Defined the core question: *How can the NSPCC measure spontaneous awareness growth and identify the KPIs that best reflect trust and donation likelihood?*  
+   This step included stakeholder discussions and reviewing NSPCC’s campaign goals.
+
+2. **Data Understanding**  
+   Analysed mixed data sources combining quantitative survey data and qualitative open-ended responses.  
+   Explored key variables:
+   - Awareness level (spontaneous vs. prompted)
+   - Donation history and intent
+   - Trust perception
+   - Moral value alignment with NSPCC’s mission  
+   Performed initial descriptive statistics and outlier detection in Excel and Python.
+
+3. **Data Preparation**  
+   - Cleaned categorical and ordinal responses.  
+   - Encoded variables such as donation intent (0 = No, 1 = Yes).  
+   - Created synthetic anonymised dataset for demonstration purposes.  
+   - Standardised scales for trust, recognition, and alignment metrics.
+
+4. **Modeling**
+   Applied a two-part approach:
+   - **Diagnostic Analysis:** Correlation and cross-tabulation to identify early trends between awareness and giving behaviour.  
+   - **Predictive Modeling:**  
+     Used **Logistic Regression** to estimate the probability of donation as a function of:
+       - Trust score  
+       - Spontaneous awareness  
+       - Moral alignment index  
+       - Demographics (age, marital status, income bracket)
+   The model was selected for interpretability and transparency, aligning with ethical requirements in charity research.
+
+   **Logistic Regression Formula:**  
+   \[
+   P(\text{Donation}=1) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 T + \beta_2 A + \beta_3 M + \beta_4 D)}}
+   \]  
+   where *T* = trust, *A* = awareness, *M* = moral alignment, *D* = demographic variables.
+
+5. **Evaluation**  
+   - Assessed predictive performance using accuracy and AUC metrics.  
+   - Validated findings with qualitative insights (open-text themes on trust, motivation, and barriers).  
+   - Triangulated both data sources to derive multi-dimensional KPIs.
+
+6. **Deployment (Insights & Recommendations)**  
+   Delivered a strategic framework for measuring campaign effectiveness, proposing six KPI dimensions:
+   - Trust-Weighted Awareness  
+   - Value Congruence Index  
+   - Emotional Resonance Score  
+   - Brand Recall Rate  
+   - Donation Propensity Index  
+   - Engagement Conversion Ratio
+
+   Visualised results using **Tableau** dashboards to support executive decision-making and communication of key metrics.
+
+---
+
+## Tools Used
+- **Excel** – data cleaning, pivot summaries  
+- **Python** – analysis (pandas, statsmodels, matplotlib)  
+- **Tableau** – dashboarding and storytelling  
+- **Word/PDF** – report creation and visual summary  
+
+---
+
+## Ethical Considerations
+- All personal identifiers were removed prior to analysis.  
+- The dataset provided in this repository is synthetic and for demonstration only.  
+- The project adhered to the University of Birmingham’s ethical research guidelines for human data.
+
+---
+
+## Outcome
+The model and framework allow the NSPCC to evaluate not only *how many* people know the brand, but *how deeply* that awareness connects to trust and action—providing a data-driven foundation for future campaign design.
