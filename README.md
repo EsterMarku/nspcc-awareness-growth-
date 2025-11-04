@@ -46,9 +46,7 @@ Interactive Tableau story: [View on Tableau Public](https://public.tableau.com/a
 | Folder | Description |
 |---------|--------------|
 | `report/` | Final academic report & summary |
-| `data/` | Synthetic version of the survey structure (for reproducibility) |
-| `methods/` | Notes on model setup, CRISP-DM diagram |
-| `assets/` | Dashboards & figures used in the report |
+| `methods/` | Notes on model setup|
 
 ---
 
